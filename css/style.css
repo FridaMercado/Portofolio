@@ -1,85 +1,208 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap');
-
-
-body{
+/* General Styles */
+body {
     background-color: rgb(19, 19, 19);
     color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
-a{
+a {
     font-size: medium;
     color: orange;
+    text-decoration: none;
 }
 
-h2,h1,h3{
+h1, h2, h3, h4 {
     font-weight: bolder;
-    font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
 }
-h3{
-    font-size: 20px;
-}
-h1{
+
+h1 {
     font-size: 30px;
 }
-.puestos,li{
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
+
+h2 {
+    font-size: 24px;
 }
 
-.foto{
-    text-align: center;
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-img{
-    border-radius: 50%;
-    border-style:double
+h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
-.intro{
-    background-image: url('../img/fondocv2.png');
-    background-size: cover;
-    text-align:left;
-    color: white;
-    padding-left: 60px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.intro ul{
-    list-style: none;
-    line-height: 30px;
-    padding: 0;
-    margin-left: 0;
-}
-
-p{
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: justify;
-}
-
-.cuerpo{
-    padding-left: 60px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 60px;
-}
-
-span{
+span {
     font-style: italic;
     font-weight: lighter;
     font-size: small;
     color: gray;
 }
 
-footer{
+/* Header */
+.intro {
+    background-image: url('../img/fondocv2.png');
+    background-size: cover;
+    text-align: left;
+    color: white;
+    padding: 40px 60px;
+}
+
+.intro ul {
+    list-style: none;
+    line-height: 30px;
+    padding: 0;
+    margin-left: 0;
+}
+
+/* Main Content */
+.cuerpo {
+    padding: 40px 60px;
+}
+
+.foto {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-hr{
-    color: yellow;
+img {
+    border-radius: 50%;
+    border-style: double;
 }
 
+/* Sections */
+.work-experience, .education, .certifications {
+    margin-bottom: 30px;
+}
 
+.job, .degree, .certification {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.job h4, .degree h4, .certification h4 {
+    color: orange;
+}
+/* Projects Section */
+.projects {
+    margin-top: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.project-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.project-card .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+hr {
+    border: 1px solid yellow;
+    margin-bottom: 20px;
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Navigation Hover */
+nav a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff6347;
+}
+
+/* General Hover Effects */
+a:hover {
+    color: #ff4500; /* Change link color on hover */
+    text-decoration: underline;
+}
+
+.btn:hover {
+    background-color: #ff4500; /* Change button color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    transition: all 0.3s ease;
+}
+
+/* Job, Degree, and Certification Cards Hover */
+.job:hover, .degree:hover, .certification:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px); /* Lift the card slightly */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Project Cards Hover */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Footer Icons Hover */
+footer a:hover {
+    color: #ff6347; /* Change icon color on hover */
+    transform: scale(1.2); /* Enlarge icons */
+    transition: all 0.3s ease;
+}

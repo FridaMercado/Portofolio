@@ -5,73 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <title>Mi CV</title>
 </head>
-
 <body>
     <header class="intro">
-            <h1>CURRICULUM VITAE</h1>
-            <h2>Frida Mercado</h2>
-            <ul>
-                <li><i class="fa-solid fa-user"></i> CP:1100</li>
-                <li><i class="fa-solid fa-phone"></i> +1234567890</li>
-                <li><i class="fa-solid fa-envelopes-bulk"></i> frida@email.com</li>
-                <li><i class="fa-solid fa-shop"></i> Ciudad de México, México</li>
-            </ul>
-            <nav>
-                <a href="./pages/sobremi.html">SOBRE MI</a>
-            </nav>
+        <h1>Frida Mercado</h1>
+        <ul>
+            <li><i class="fa-solid fa-phone"></i> +1234567890</li>
+            <li><i class="fa-solid fa-envelopes-bulk"></i> frida@email.com</li>
+            <li><i class="fa-solid fa-shop"></i> Ciudad de México, México</li>
+        </ul>
+        <nav>
+            <a href="./pages/sobremi.html">SOBRE MI</a>
+        </nav>
     </header>
     <main class="cuerpo">
         <div class="foto">
             <img width="200px" src="img/Foto_Frida Mercado_2019.jpg" alt="foto de mi cv">
         </div>
-        <div>
-            <h3>Experiencia Profesional</h3>
-            <ul class="puestos">
-                <li>INGENIERO INFORMACIÓN TÉCNICA <span> 09/2017 - Actual</span></li>
-                <p>Gestión de información de los proyectos de información procedente de alta y baja de dominios y software, homologación de sistemas técnicos de producción, apoyo a la creación e implementación de guías para regir gobernabilidad en los proyectos en conjunto con TI.</p>
-                <li>AUXILIAR DE PROYECTOS <span> 01/2017 - 08/2017</span></li>
-                <p>Responsable de trámites frente a CFE para las instalaciones fotovoltaicas y responsable del marketing digital de la empresa. Cálculo de utilidades de proyectos y ventas de la cartera de clientes. Cotización de proyectos de instalación de paneles solares fotovoltaicos y paneles de calentamiento de agua solares</p>
-                <li>RESIDENCIA PROFESIONAL <span> 04/2016 - 12/2016</span></li>
-                <p>Responsable de cotizaciones de proyectos de inversión en “Sistemas de Concentración Solar” para el calentamiento de agua y generación de energía térmica en industrias y procesos, así como del diseño de planos de vistas aéreas con plataforma AutoCAD.</p>
-            </ul>
-        </div>
-        <h3>Educación</h3>
-        <p>Ingeniería en Energía y Desarrollo Sustentable <span>2016</span></p>
 
-        <h3>Habilidades</h3>
-        <ul>
-            <li>Idiomas
-                <ul>
-                    <li>Español <span> Nativo</span></li>
-                    <li>Inglés  <span> B2</span></li>
-                    <li>Alemán  <span> A2</span></li>
-                </ul>
-            </li>
-            <li>Informática
-                <ul>
-                    <li>Microsoft Office <span> 95%</span></li>
-                    <li>HTML & CSS  <span> 70%</span></li>
-                    <li>AutoCAD  <span> 60%</span></li>
-                    <li>Sketchup  <span> 60%</span></li>
-                    <li>PVsyst <span> 50%</span></li>
-                    <li>Java  <span> 30%</span></li>
-                </ul>
-            </li>
-            <li>Certificaciones
-                <ul>
-                    <li>Diplomado en Sistemas de Programación</li>
-                    <li>Diplomado en Competencias Gerenciales</li>
-                </ul>
-            </li>
-        </ul>
+        <!-- Work Experience Section -->
+        <section class="work-experience">
+            <h3>Experiencia Profesional</h3>
+            <div class="job">
+                <h4>INGENIERO INFORMACIÓN TÉCNICA <span>09/2017 - Actual</span></h4>
+                <p>Analicé bases de datos para identificar inconsistencias, omisiones y errores para implementar el correcto cumplimiento regulatorio de la reforma energética en la Gerencia de Innovación e Inteligencia Tecnológica.</p>
+                <p>Revisión, integración y validación de datos técnicos de perforación, terminación y reparación de pozos en el llenado de formatos de información técnica para el cumplimiento regulatorio establecido por la Comisión Nacion de Hidrocarburos y para proyectos de cuartos de datos de la empresa.</p>    
+                <p>Responsable de asesorar y mantener la comunicación interna entre equipos de ingenieros especialistas, gerentes de operación y administrativos para solucionar los cuestionamientos que impendían avanzar en los proyectos y cumplir con fechas límite de entregables a través de delegación de actividades y elaboración de oficios de consulta y entrega de información.</p>
+            </div>                    
+            <div class="job">
+                <h4>AUXILIAR DE PROYECTOS <span>01/2017 - 08/2017</span></h4>
+                <p>Responsable de trámites frente a CFE para las instalaciones fotovoltaicas y responsable del marketing digital de la empresa. Cálculo de utilidades de proyectos y ventas de la cartera de clientes. Cotización de proyectos de instalación de paneles solares fotovoltaicos y paneles de calentamiento de agua solares.</p>
+            </div>
+            <div class="job">
+                <h4>RESIDENCIA PROFESIONAL <span>04/2016 - 12/2016</span></h4>
+                <p>Responsable de cotizaciones de proyectos de inversión en “Sistemas de Concentración Solar” para el calentamiento de agua y generación de energía térmica en industrias y procesos, así como del diseño de planos de vistas aéreas con plataforma AutoCAD.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education">
+            <h3>Educación</h3>
+            <div class="degree">
+                <h4>Ingeniería en Energía y Desarrollo Sustentable <span>2016</span></h4>
+                <p>Universidad del Valle de México</p>
+            </div>
+        </section>
+
+        <!-- Certifications and Courses Section -->
+        <section class="certifications">
+            <h3>Certificaciones y Cursos</h3>
+            <div class="certification">
+                <h4>Diplomado en Sistemas de Programación</h4>
+                <p>Universidad del Valle de México</p>
+            </div>
+            <div class="certification">
+                <h4>Diplomado en Competencias Gerenciales</h4>
+                <p>Universidad del Valle de México</p>
+            </div>
+        </section>
+    <!-- Projects Section -->
+<section class="projects">
+    <h3>Proyectos Destacados</h3>
+    <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="./assets/maison-porcelaine.jpg" alt="Proyecto 1">
+            <h4>Sistema de Reservas Online</h4>
+            <p>Desarrollo de un eCommerce para la renta de vajillas personalizables para eventos, con filtros de búsqueda, autenticación de usuarios y panel de administración. Ejercí rol de SCRUM Master al mismo tiempo que colaboré con en el Backend y Testing.</p>
+            <p><strong>Backend:</strong> Implementación de una API REST con SpringBoot incluyendo autenticación con JWT y gestión de base de datos en MySQL.</p>
+            <p><strong>Testing & QA: </strong>Validación de endpoints con Postman y pruebas automatizadas con Cypress para asegurar la calidad del software, así como la realización de una matriz de casos de prueba para abarcar cobertura del 100% en pruebras de integración.</p>
+            <a href="https://maisondh.online/" class="btn">Ver más</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="./assets/3d-garden.jpg" alt="Proyecto 2">
+            <h4>Ecommerce 3D- Garden</h4>
+            <p>Como parte del bootcamp de Generation desarrollé un proyecto integrador donde diseñé y desarrollé una plataforma ecommerce desde cero, utilizando las tecnologías Java, JavaScript, HTML y React. Trabajé en el backend y frontend, implementando bases de datos en SQL-MongoDB y asegurando la calidad del sistema mediante pruebas (testing). Además, desplegué la aplicación en una arquitectura de AWS, gestionando su infraestructura en la nube para garantizar escalabilidad y rendimiento.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="./assets/about-me.jpg" alt="Proyecto 3">
+            <h4>Portafolio Web Personal</h4>
+            <p>Diseño y desarrollo de un portafolio web para mostrar mis proyectos y habilidades.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+    </div>
+</section>
+    
+    
     </main>
+
     <footer>
         <hr>
         <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/FridaMercado"><i class="fa-brands fa-github"></i></i></a>
+        <a href="https://github.com/FridaMercado"><i class="fa-brands fa-github"></i></a>
     </footer>
 </body>
 </html>
