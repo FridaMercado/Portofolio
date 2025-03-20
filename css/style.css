@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: rgb(19, 19, 19);
+    background-color: #121212;
     color: white;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -35,11 +35,16 @@ h4 {
     margin-bottom: 5px;
 }
 
-span {
+#date {
     font-style: italic;
     font-weight: lighter;
     font-size: small;
     color: gray;
+}
+#role{
+    color: rgb(145, 110, 15);
+    font-weight: lighter;
+    font-size: small;
 }
 
 /* Header */
@@ -86,7 +91,7 @@ img {
 }
 
 .job h4, .degree h4, .certification h4 {
-    color: orange;
+    color: rgb(247, 227, 54);
 }
 /* Projects Section */
 .projects {
